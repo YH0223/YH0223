@@ -44,7 +44,7 @@
 
 ### 2) DicomViewer — 웹 기반 DICOM 뷰어(대용량/다양한 포맷 대응)
 - Role: Backend/Infra (전송 흐름 설계, 인증, 멀티 DB 운영)
-- Stack: Java, Spring Boot, JWT, Redis, Oracle + MariaDB, Nginx/AWS
+- Stack: Java, Spring Boot, JWT, Redis, Oracle + MariaDB
 - Key Points
   - 대용량 파일에서 “한 번에 전송” 방식의 한계를 겪고, 전송 단위/실패 복구 흐름을 먼저 잡는 방향으로 정리
   - Transfer Syntax 등 입력 특성 차이로 발생하는 실패 케이스를 분류하고, 지원 범위/예외 처리 기준을 서버-클라이언트 흐름으로 고정
@@ -62,3 +62,15 @@
   - LSTM을 직접 구현해 예측을 시도했으나 성능 목표 미달 + 평가 지표/검증 설계 미숙으로 개선이 누적되지 않음
   - 수집 데이터 활용이 가능한 LSR-IGRU로 전환 후 KRX400 재학습, 예측 대신 “상대 점수 기반 랭킹”으로 매수/매도 판단 보조 방향으로 피벗(FastAPI로 랭킹/점수 조회 API 제공)
 - Links: Repo( ) · API( ) · Demo( )
+
+---
+
+### 4) 다각다각 — 목표/체크리스트 기반 웹 서비스(팀 프로젝트)
+- Role: Backend (Auth · CRUD · API)
+- Stack: Java, Spring Boot, OAuth2, JWT, MySQL, Swagger
+- Key Points
+  - OAuth2 소셜 로그인 흐름 구현(인가 코드 → 사용자 식별 → 신규/기존 유저 처리)
+  - JWT 발급/검증 및 인증 상태 유지 방식 적용(요청 단 인증 처리, 보호 API 권한 제어)
+  - 목표/체크리스트/일일 기록 등 핵심 도메인 CRUD API 설계 및 구현 + 예외 케이스 처리
+- Links: Repo( ) · Docs( )
+
