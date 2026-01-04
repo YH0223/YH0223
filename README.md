@@ -28,7 +28,7 @@
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
 
-
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://www.notion.so/27c36c10127a80a7ae26fb760e1cb7f0)
 ## 🚀 Projects
 
 ### 1) HaksaMate — 대학생 통합 플랫폼 (시간표/학사일정/커뮤니티/마켓/실시간 소통)
